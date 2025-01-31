@@ -16,8 +16,8 @@
   "dns": {
     "servers": [
       {"tag": "proxyDns", "address": "https://cloudflare-dns.com/dns-query", "address_resolver": "udpdns", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
-      {"tag": "localDns", "address": "https://doh.pub/dns-query", "address_resolver": "udpdns", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
-      {"tag": "udpdns", "address": "119.29.29.29", "detour": "🎯 全球直连"},
+      {"tag": "localDns", "address": "https://dns.alidns.com/dns-query", "address_resolver": "udpdns", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
+      {"tag": "udpdns", "address": "223.5.5.5", "detour": "🎯 全球直连"},
       {"tag": "block", "address": "rcode://success"}
     ],
     "rules": [
@@ -131,7 +131,7 @@
     { "tag": "🔒 私有网络", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "♻️ 自动选择", "🐸 手动切换", "🎯 全球直连"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "https://check.leung0108.us.kg", "interval": "10m", "tolerance": 50},
+    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.google.com/generate_204", "interval": "10m", "tolerance": 50},
     { "tag": "🛑 广告拦截", "type": "selector", "outbounds": ["REJECT"] },
     { "tag": "🎯 全球直连", "type": "selector", "outbounds": ["DIRECT"] },
     { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },

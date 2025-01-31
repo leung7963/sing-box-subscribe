@@ -131,7 +131,7 @@
     { "tag": "🔒 私有网络", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "♻️ 自动选择", "🐸 手动切换", "🎯 全球直连"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "https://204.leung0108.us.kg/generate204", "interval": "10m", "tolerance": 50},
+    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "https://check.leung0108.us.kg", "interval": "10m", "tolerance": 50},
     { "tag": "🛑 广告拦截", "type": "selector", "outbounds": ["REJECT"] },
     { "tag": "🎯 全球直连", "type": "selector", "outbounds": ["DIRECT"] },
     { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },

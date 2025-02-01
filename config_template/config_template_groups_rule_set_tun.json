@@ -141,7 +141,6 @@
     "rules": [
       { "action": "sniff" },
       { "protocol": "dns", "action": "hijack-dns" },
-      { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "rule_set": [ "zhilian" ], "outbound": "⭕️ 直连网络" },
       { "rule_set": [ "daili" ], "outbound": "⭕️ 代理网络" },
       { "rule_set": [ "cn" ], "outbound": "🇨🇳 直连域名" },

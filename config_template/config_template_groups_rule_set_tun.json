@@ -137,8 +137,7 @@
     { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
     { "tag": "REJECT", "type": "block" },
     { "tag": "DIRECT", "type": "direct" },
-    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "🚀 节点选择", "DIRECT", "REJECT" ] },
-    { "tag": "dns-out", "type": "dns" }
+    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "🚀 节点选择", "DIRECT", "REJECT" ] }
   ],
   "route": {
     "auto_detect_interface": true,

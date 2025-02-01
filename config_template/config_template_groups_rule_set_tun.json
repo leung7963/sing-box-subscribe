@@ -144,7 +144,6 @@
     { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
     { "tag": "🎯 全球直连", "type": "direct" }
   ],
-  ],
   "route": {
     "auto_detect_interface": true,
     "final": "🚀 节点选择",

@@ -137,6 +137,7 @@
   ],
     "route": {
     "auto_detect_interface": true,
+    "final": "🚀 节点选择",
     "rules": [
       {
         "action": "sniff"

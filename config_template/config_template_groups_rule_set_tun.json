@@ -101,7 +101,7 @@
     {
       "type": "mixed",
       "listen": "127.0.0.1",
-      "listen_port": 2333,
+      "listen_port": 2333
     },
     {
       "tag": "mixed-in",

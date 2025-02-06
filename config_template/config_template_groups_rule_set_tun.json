@@ -399,12 +399,12 @@
       },
       {
         "type": "direct",
-        "tag": "direct"
+        "tag": "🎯 全球直连"
       }
     ],
     "route": {
       "auto_detect_interface": true,
-      "final": "Proxy",
+      "final": "🚀 节点选择",
       "rules": [
         {
           "inbound": ["tun-in", "mixed-in"],
@@ -424,105 +424,163 @@
           "action": "hijack-dns"
         },
         {
-          "rule_set": "geosite-category-ads-all",
+          "rule_set": "ads",
           "clash_mode": "rule",
           "action": "reject"
         },
         {
-          "rule_set": "geosite-category-ads-all",
+          "rule_set": "ads",
           "clash_mode": "global",
-          "outbound": "Proxy"
+          "outbound": "🚀 节点选择"
         },
         {
           "clash_mode": "direct",
-          "outbound": "direct"
+          "outbound": "🎯 全球直连"
         },
         {
           "clash_mode": "global",
           "outbound": "Proxy"
         },
         {
-          "domain": [
-            "clash.razord.top",
-            "yacd.metacubex.one",
-            "yacd.haishan.me",
-            "d.metacubex.one"
-          ],
-          "outbound": "direct"
-        },
-        {
-          "ip_is_private": true,
-          "outbound": "direct"
-        },
-        {
-          "rule_set": "geosite-openai",
-          "outbound": "OpenAI"
-        },
-        {
-          "rule_set": ["geosite-youtube", "geoip-google", "geosite-google", "geosite-github"],
-          "outbound": "Google"
-        },
-        {
-          "rule_set": ["geoip-telegram", "geosite-telegram"],
-          "outbound": "Telegram"
-        },
-        {
-          "rule_set": ["geoip-twitter", "geosite-twitter"],
-          "outbound": "Twitter"
-        },
-        {
-          "rule_set":["geoip-facebook", "geosite-facebook"],
-          "outbound": "Facebook"
-        },
-        {
-          "rule_set": "geosite-bilibili",
-          "outbound": "BiliBili"
-        },
-        {
-          "rule_set": "geosite-bahamut",
-          "outbound": "Bahamut"
-        },
-        {
-          "rule_set": "geosite-spotify",
-          "outbound": "Spotify"
-        },
-        {
-          "rule_set": "geosite-tiktok",
-          "outbound": "TikTok"
-        },
-        {
-          "rule_set": ["geoip-netflix", "geosite-netflix"],
-          "outbound": "Netflix"
-        },
-        {
-          "rule_set": "geosite-disney",
-          "outbound": "Disney+"
-        },
-        {
-          "rule_set": ["geoip-apple", "geosite-apple", "geosite-amazon"],
-          "outbound": "Apple"
-        },
-        {
-          "rule_set": "geosite-microsoft",
-          "outbound": "Microsoft"
-        },
-        {
-          "rule_set": ["geosite-category-games", "geosite-dmm"],
-          "outbound": "Games"
-        },
-        {
-          "rule_set": ["geosite-hbo", "geosite-primevideo"],
-          "outbound": "Streaming"
-        },
-        {
-          "rule_set": "geosite-geolocation-!cn",
-          "outbound": "Global"
-        },
-        {
-          "rule_set": ["geoip-cn", "geosite-cn"],
-          "outbound": "China"
-        }
-      ],
+        "rule_set": [
+          "zhilian"
+        ],
+        "outbound": "⭕️ 直连网络"
+      },
+      {
+        "rule_set": [
+          "daili"
+        ],
+        "outbound": "⭕️ 代理网络"
+      },
+      {
+        "rule_set": [
+          "cn"
+        ],
+        "outbound": "🇨🇳 直连域名"
+      },
+      {
+        "rule_set": [
+          "privateip"
+        ],
+        "outbound": "🔒 私有网络"
+      },
+      {
+        "rule_set": [
+          "cnip"
+        ],
+        "outbound": "🇨🇳 直连 IP"
+      },
+      {
+        "rule_set": [
+          "applications"
+        ],
+        "outbound": "🖥️ 直连软件"
+      },
+      {
+        "rule_set": [
+          "private"
+        ],
+        "outbound": "🔒 私有网络"
+      },
+      {
+        "rule_set": [
+          "microsoft-cn"
+        ],
+        "outbound": "🪟 微软服务"
+      },
+      {
+        "rule_set": [
+          "apple-cn"
+        ],
+        "outbound": "🍎 苹果服务"
+      },
+      {
+        "rule_set": [
+          "google-cn"
+        ],
+        "outbound": "🇬 谷歌服务"
+      },
+      {
+        "rule_set": [
+          "games-cn"
+        ],
+        "outbound": "🎮 游戏服务"
+      },
+      {
+        "rule_set": [
+          "netflix",
+          "netflixip"
+        ],
+        "outbound": "🎥 奈飞视频"
+      },
+      {
+        "rule_set": [
+          "disney"
+        ],
+        "outbound": "📽️ 迪士尼+"
+      },
+      {
+        "rule_set": [
+          "max"
+        ],
+        "outbound": "🎞️ Max"
+      },
+      {
+        "rule_set": [
+          "primevideo"
+        ],
+        "outbound": "🎬 Prime Video"
+      },
+      {
+        "rule_set": [
+          "appletv"
+        ],
+        "outbound": "🍎 Apple TV+"
+      },
+      {
+        "rule_set": [
+          "youtube"
+        ],
+        "outbound": "📹 油管视频"
+      },
+      {
+        "rule_set": [
+          "tiktok"
+        ],
+        "outbound": "🎵 TikTok"
+      },
+      {
+        "rule_set": [
+          "bilibili"
+        ],
+        "outbound": "📺 哔哩哔哩"
+      },
+      {
+        "rule_set": [
+          "ai"
+        ],
+        "outbound": "🤖 人工智能"
+      },
+      {
+        "rule_set": [
+          "networktest"
+        ],
+        "outbound": "📈 网络测试"
+      },
+      {
+        "rule_set": [
+          "proxy"
+        ],
+        "outbound": "🪜 代理域名"
+      },
+      {
+        "rule_set": [
+          "telegramip"
+        ],
+        "outbound": "📲 电报消息"
+      }
+    ],
       "rule_set": [
       {
         "tag": "daili",

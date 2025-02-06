@@ -21,8 +21,7 @@
     "dns": {
       "fakeip": {
         "enabled": true,
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.0/15"
       },
       "servers": [
         {
@@ -54,8 +53,7 @@
         },
         {
           "query_type": [
-            "A",
-            "AAAA"
+            "A"
           ],
           "rule_set": "cn",
           "server": "fakeip"
@@ -81,8 +79,7 @@
         },
         {
           "query_type": [
-            "A",
-            "AAAA"
+            "A"
           ],
           "server": "fakeip"
         }

@@ -26,11 +26,13 @@
       "servers": [
         {
           "tag": "google",
-          "address": "8.8.8.8"
+          "type" "https",
+          "server": "dns.google"
         },
         {
           "tag": "local",
-          "address": "119.29.29.29",
+          "type": "https",
+          "address": "dot.pub",
           "detour": "🎯 全球直连"
         },
         {
@@ -39,10 +41,6 @@
         }
       ],
       "rules": [
-        {
-          "outbound": "any",
-          "server": "local"
-        },
         {
           "clash_mode": "direct",
           "server": "local"
@@ -142,6 +140,11 @@
     { "tag": "🎯 全球直连", "type": "direct" }
     ],
     "route": {
+      "default_domain_resolver": {
+        "server": "local",
+        "rewrite_tll": 60,
+        "client_subnet": "119.29.29.29"
+      },
       "auto_detect_interface": true,
       "final": "🚀 节点选择",
       "rules": [

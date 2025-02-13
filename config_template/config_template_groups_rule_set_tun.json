@@ -26,7 +26,7 @@
       "servers": [
         {
           "tag": "google",
-          "type" "https",
+          "type": "https",
           "server": "dns.google",
           "detour": "🚀 节点选择"
         },

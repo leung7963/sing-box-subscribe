@@ -50,7 +50,8 @@
         },
         {
           "query_type": [
-            "A"
+            "A",
+            "AAAA"
           ],
           "rule_set": "cn",
           "server": "fakeip"
@@ -76,7 +77,8 @@
         },
         {
           "query_type": [
-            "A"
+            "A",
+            "AAAA"
           ],
           "server": "fakeip"
         }

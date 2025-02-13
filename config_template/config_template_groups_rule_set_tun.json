@@ -135,7 +135,7 @@
     { "tag": "📲 电报消息", "type": "selector", "outbounds": ["🚀 节点选择"] },
     { "tag": "🖥️ 直连软件", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🔒 私有网络", "type": "selector", "outbounds": ["🎯 全球直连"] },
-    { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "♻️ 自动选择", "🐸 手动切换", "🎯 全球直连"] },
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "♻️ 自动选择", "🎯 全球直连", "{all}"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.google.com/generate_204", "interval": "10m", "tolerance": 50},
     { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
@@ -183,7 +183,7 @@
         },
         {
           "clash_mode": "global",
-          "outbound": "🐸 手动切换"
+          "outbound": "🚀 节点选择"
         },
         {
         "rule_set": [
